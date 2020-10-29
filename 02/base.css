@@ -1,0 +1,47 @@
+body {
+ background: #0F111A;
+ color: white;
+ margin: 0 auto;
+ text-align: center;
+ font-family: 'Lato', sans-serif;
+ padding: 0 2rem;
+}
+
+:root {
+ --orange: orange;
+ --green: yellowgreen;
+ --yellow: yellow;
+ --blue: aqua;
+ --purple: rebeccapurple;
+}
+
+.container {
+ height: 50vh;
+ 
+}
+
+.container > div {
+  height: 8rem; 
+  width: 6rem;
+  background: var(--color);
+}
+
+.container > div:nth-child(1n) {
+  background: var(--orange);
+}
+
+.container > div:nth-child(2n) {
+  background: var(--green);
+}
+
+.container > div:nth-child(3n) {
+  background: var(--yellow);
+}
+
+.container > div:nth-child(4n) {
+  background: var(--blue);
+}
+
+.container > div:nth-child(5n) {
+  background: var(--purple);
+}

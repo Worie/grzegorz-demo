@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Advanced CSS</title>
+ <link rel="stylesheet" href="base.css">
+ <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <h1>Box model</h1>
+
+ <div class="box box--orange">
+  Hello world!
+ </div>
+ <style>
+  body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+  
+  .box {
+   width: 6rem;
+   height: 8rem;
+   background: var(--color);
+   padding: 0.2rem;
+   box-sizing: border-box;
+  }
+
+  .box--orange {
+   --color: var(--orange);
+  }
+ </style>
+</body>
+
+</html>
